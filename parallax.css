@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#wrapper{
+    height: 100vh; /*viewport height*/
+    overflow-x:hidden ;
+    overflow-y: auto;
+    perspective: 10px;/*need to on for 3d concept*/
+
+}
+
+.container{
+position: relative;
+display:flex;
+justify-content:center;
+align-items:center;
+transform-style: preserve-3d; /*need to for 3dconcept*/
+height:100%;
+z-index: -1; /*iss agle image ya layer ko pta  lgta hai ki iske upr aana hai uske*/
+}
+
+.background{
+    transform: translateZ(-39px)scale(5);
+}
+.foreground{
+    transform: translateZ(-20px)scale(3);
+ 
+    
+}
+h1{
+    position: absolute;
+    top: 12rem;
+    font-size: 6rem;
+    color: #dc143c;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    letter-spacing: 4px;
+    text-shadow: 0 0 80px rgba(225, 10, 31, 0.3);
+}
+
+
+.background{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+object-fit: cover;
+}
+
+.foreground{
+    position:absolute;
+    height:69%;
+    width: 26%;
+    z-index: -1;
+    object-fit: cover;
+    top: 20rem;
+}
+
+
+SECTION{
+   background-color: rgba(14, 1, 1, 0.975);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    color: #dc143c;
+    position: absolute;
+    padding: 0 10rem;
+    margin-left:150px; 
+    font-size:3rem; 
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+letter-spacing: 4px;
+background-color: aliceblue;
+font-weight: 600;
+text-shadow: 0 0 5px rgb(29, 1, 1);
+    
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0; 
+
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed; /* these two  properties are used to adjust the image */
+    background-position: center;
+    height: 500px;
+}
+
+.bg1{
+    background-image:url(images/pubg.jpg);
+   
+}
+
+.bg2{
+    background-image:url(images/callofduty.jpg);
+}
+
+.bg3{
+    background-image:url(images/apex.jpg);
+}
+
+.desc{
+    position: absolute;
+    padding: 0.5rem 2.5rem;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #dc143c;
+font-size: 3rem;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+letter-spacing: 4px;
+background-color: aliceblue;
+font-weight: 600;
+text-shadow: 0 0 5px rgb(29, 1, 1);
+
+}
